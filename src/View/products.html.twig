@@ -1,0 +1,12 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+    {{ parent() }} - Accueil
+   {% endblock %} 
+
+{% block navbar %}  
+{{ parent() }}
+{% endblock %} 
+
+{% block content %}   
+    <p> {{ product }} </p>
+{% endblock %}    
