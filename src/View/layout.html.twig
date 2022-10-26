@@ -13,16 +13,10 @@
 </head>
 
 <body>
-    {% block navbar %}
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a>
-            <li><a href="product.php">Products</a>
-        </ul>
-    </nav>
-    {% endblock %}
 <main>
     {% block content %}{% endblock %}
-</main>    
+</main>   
+
+    {% include '_footer.html.twig'%}
 </body>
 </html>

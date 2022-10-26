@@ -3,10 +3,9 @@
     {{ parent() }} - Accueil
    {% endblock %} 
 
-{% block navbar %}  
-{{ parent() }}
-{% endblock %} 
+ 
 
-{% block content %}   
+{% block content %}  
+{% include 'component/_navbar.html.twig' %} 
     <p> {{ product }} </p>
 {% endblock %}    
